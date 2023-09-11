@@ -1,0 +1,140 @@
+*{
+
+    padding: 0;
+    margin: 0;
+
+}
+
+.contenedor {
+
+    width: 100%;
+    background: black;
+    
+}
+
+
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    
+    width: 10%;
+    
+}
+
+
+.nombre {
+
+    color: white;
+    font-size: 28px;
+
+}
+
+.nombre span {
+
+    color: orange;
+
+}
+
+nav ul li {
+
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+
+nav ul li a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover {
+
+    color: orange;
+    text-decoration: underline 5px;
+
+}
+
+#btn a {
+
+    margin-left: 20px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: black;
+
+}
+
+#btn a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4;
+
+}
+
+
+#btn a:hover {
+
+    border-radius: 30px;
+    background-color: orange;
+    transform: scale(1.1);
+    cursor: pointer;
+
+
+}
+
+
+.imagenes{
+
+    width: 60%;
+    margin-left: 5%;
+    
+}
+
+.cuadro{
+
+    margin-top: 10%;
+    background-color: blue;
+
+}
+.uno{  
+
+    width: 30%;
+    padding: 10px;
+    background: red;
+    
+}
+
+.uno {
+
+    margin-top:-60%,
+    
+}
+
+.col-sm-4 img {
+
+    position: relative;
+    top: 1%;
+
+}

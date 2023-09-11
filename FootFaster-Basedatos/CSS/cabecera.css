@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+/* ---------------------------- */
+
+body{
+    background-color:#111520;
+}
+/*________________________________ div inicial del tirulo _______________________________________________*/
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    height: 11vh;
+    overflow: auto;
+    flex-direction: row;
+    position: fixed;
+    z-index: 2;
+    background-color:transparent;
+    top: 0%;
+}
+
+.titu {
+    width: 50%;
+    height: 100px;    
+}
+
+.button {
+  margin: 25px;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+
+/*__________________________________ titulo pricipal _________________________________________*/
+
+.button {
+    --border-right: 6px;
+    --text-stroke-color: white;
+    --animation-color: orange;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+/* -------------------------carrito------------------------- */
+
+.Btn_car {
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: orange;
+  }
+  
+
+  .car {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .car svg {
+    width: 17px;
+  }
+  
+  .car svg path {
+    fill: white;
+  }
+
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+
+  .Btn_car:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn_car:hover .car {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+
+  .Btn_car:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+
+  .Btn_car:active {
+    transform: translate(2px ,2px);
+  }
+
